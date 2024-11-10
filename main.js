@@ -204,9 +204,10 @@ function fightDragon() {
 
 function goFight() {
     update(locations[3]);
+    monsterHealth = monsters[fighting].health; 
     monsterStats.style.display = "block";
     monsterNameText.innerHTML = monsters[fighting].name;
-    monsterHealthText.innerHTML = monsters[fighting].health; 
+    monsterHealthText.innerHTML = monsterHealth;
 }
 
 function attack() {
